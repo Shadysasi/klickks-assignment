@@ -72,7 +72,7 @@ const Register = ({ onLogin }) => {
         </div>
         
         <div className="py-8 px-4 sm:px-10">
-          <form className="space-y-6" onSubmit={onSubmit}>
+          <form className="space-y-6" onSubmit={onSubmit} name="register" method="POST" data-netlify="true">
             {error && (
               <div className="bg-red-50 border-l-4 border-red-500 p-4 flex items-center">
                 <svg className="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

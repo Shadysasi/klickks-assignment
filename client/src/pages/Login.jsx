@@ -59,7 +59,7 @@ const Login = ({ onLogin }) => {
         </div>
         
         <div className="py-8 px-4 sm:px-10">
-          <form className="space-y-6" onSubmit={onSubmit}>
+          <form className="space-y-6" onSubmit={onSubmit} name="login" method="POST" data-netlify="true">
             {error && (
               <div className="bg-red-50 border-l-4 border-red-500 p-4 flex items-center">
                 <span className="text-red-700">{error}</span>
